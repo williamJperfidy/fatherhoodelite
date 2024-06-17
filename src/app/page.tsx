@@ -1,95 +1,95 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import "./globals.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <>
+      <head>
+        <link rel="icon" href="/images.png" />
+      </head>
+      <main>
+        <section className="frontBackground">
+          <h1 className="fontThin ah1">Chase Fatherhood Elite®</h1>
+          <span className="sub">A card for the best fathers</span>
+        </section>
+        <section className="content">
+          <section style={{ textAlign: "center", alignItems: "center" }}>
+            <h1 className="smallH">MATERIALLY DIFFERENT</h1>
+            <img
+              src="/Untitled presentation (2).png"
+              style={{ borderRadius: 10, marginTop: 30 }}
+              width="250em"
+            ></img>
+            <img
+              src="/Untitled presentation (3).png"
+              style={{ borderRadius: 10, marginTop: 30, marginLeft: 20 }}
+              width="250em"
+            ></img>
+            <p style={{ color: "grey", fontSize: 11 }}>
+              High-grade multi-layered paper flashcard material carefully
+              compounded with premium generic glue
+            </p>
+          </section>
+        </section>
+        <section className="content2">
+          <div
+            style={{
+              textAlign: "left",
+              alignItems: "left",
+              paddingBottom: "1%",
+            }}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+            <h1 className="smallH">
+              REMARKABLE CASHBACK FOR AN EQUALLY REMARKABLE FATHER
+            </h1>
+          </div>
+          <section
+            style={{ display: "grid", gridTemplateColumns: "33% 33% 33%" }}
+          >
+            <div style={{ textAlign: "left", marginTop: "10px" }}>
+              <h1 className="fontThin ah2">10% cashback</h1>
+              <span>on all car and car repair purchases</span>
+            </div>
+            <div style={{ textAlign: "left", marginTop: "10px" }}>
+              <h1 className="fontThin ah2">5% cashback</h1>
+              <span>on casino and roulette spending</span>
+            </div>
+            <div style={{ textAlign: "left", marginTop: "10px" }}>
+              <h1 className="fontThin ah2">2.5% cashback</h1>
+              <span>on all other purchases</span>
+            </div>
+          </section>
+        </section>
+        <section className="content" style={{ textAlign: "left" }}>
+          <h1 className="smallH">BENEFITS WORTH HAVING CHILDREN FOR</h1>
+          <section style={{ display: "grid", gridTemplateColumns: "60% 40%" }}>
+            
+            <section
+              style={{ display: "grid", gridTemplateColumns: "50% 50%" }}
+              className="benefitsParent"
+            >
+              <div style={{ marginTop: "10px", paddingTop:"50%" }}>
+                <h1 className="fontThin ah2">$0 annual fee</h1>
+                <span>No annual fee for all cardmembers</span>
+                
+              </div>
+              <div style={{ marginTop: "10px", paddingTop:"50%"  }}>
+                <h1 className="fontThin ah2">$500 cardmember bonus</h1>
+                <span>New cardmembers receive a $500 bonus</span>
+              </div>
+              <div style={{ marginTop: "10px" }}>
+                <h1 className="fontThin ah2">$100,000 anniversary credit</h1>
+                <span>Credit for a $100,000 Ferrari® every year</span>
+              </div>
+              
+            </section>
+            <img
+              src="file (1).svg"
+              width="125%"
+              style={{ paddingLeft: "58%" }}
+            ></img>
+          </section>
+        </section>
+      </main>
+    </>
   );
 }
